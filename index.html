@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <p class="red">----------------------------</p>
+    <p class="red">
+        Crear usuarios en thunderCLient
+    </p><br>
+    <p class="white">
+        Tecnicamente es en el body en formato JSON, usando el verbo POST, por ejemplo...
+    </p><br>
+    <p class="violet">
+        http://localhost:3000/account<br><br>
+        {<br>
+            "guid": "123",<br>
+            "name": "Geo Freeman"<br>
+        }
+    </p><br>
+    <p class="white">
+        Una vez hecho eso, nos volvemos a pasar al verbo GET, y en el link despues de account, le metemos el id del new commer.
+    </p><br>
+    <p class="green">
+        http://localhost:3000/account/123<br><br>
+        {<br>
+            "id": "123",<br>
+            "name": "Geo Freeman"<br>
+        }
+    </p><br>
+    <p class="white">
+        así nos regresa el mismo json pero como respuesta.<br>
+        - Ahora, usando el verbo Patch, en el body le voy a cambiar de nombre a Geo<br>
+        Usaré el verbo Patch, y elmismo link ->  http://localhost:3000/account/112233
+    </p><br>
+    <p class="orange">
+        {<br>
+            "name": "Geo Freeman"<br>
+        }
+    </p><br>
+    <p class="green">
+        Usuario actualizado
+    </p><br>
+    <p class="white">
+        Y ahora le vuelvo a dar al verbo GET
+    </p><br>
+    <p class="orange">
+        {<br>
+            "name": "Freeman"<br>
+        }
+    </p><br>
+    <p class="green">
+        Usuario actualizado
+    </p><br>
+    <p class="white">
+        Y ahora le doy en el verbo GET puedes dejar o quitar el mini-código del body y le doy send
+    </p><br>
+    <p class="orange">
+        {<br>
+            "id": "112233",<br>
+            "name": "Freeman"<br>
+        }
+    </p><br>
+    <p class="white">
+        Y asi se pueden manejar los verbos en las solicitudes HTML
+    </p><br>
+
+
+    
+</body>
+</html>
